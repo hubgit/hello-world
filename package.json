@@ -3,12 +3,10 @@
   "version": "0.0.1",
   "description": "A simple Node module",
   "main": "dist/index.js",
+  "files": [ "dist" ],
   "repository": "https://github.com/hubgit/hello-world.git",
   "author": "Alf Eaton <eaton.alf@gmail.com>",
   "license": "MIT",
-  "files": [
-    "dist"
-  ],
   "scripts": {
     "test": "jest --runInBand",
     "clean": "rimraf dist",
@@ -34,7 +32,10 @@
       "jasmine": true
     }
   },
+  "engines": {
+    "node": ">=6"
+  },
   "babel": {
-    "presets": [["env", { "targets": { "node": 4 }}]]
+    "presets": [["env", { "targets": { "node": 6 }}]]
   }
 }
